@@ -83,6 +83,7 @@ func resourceManifest() *schema.Resource {
 				Type:      schema.TypeString,
 				Required:  true,
 				Sensitive: false,
+				ForceNew: true,
 			},
 		},
 	}
