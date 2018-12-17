@@ -79,6 +79,11 @@ func resourceManifest() *schema.Resource {
 				Sensitive: false,
 				ForceNew: true,
 			},
+			"status": &schema.Schema{
+				Type:      schema.TypeString,
+				Optional: true,
+				Sensitive: false,
+			},
 			"content": &schema.Schema{
 				Type:      schema.TypeString,
 				Required:  true,
